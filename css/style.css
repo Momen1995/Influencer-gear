@@ -32,8 +32,9 @@ body{
 }
 /* ===================header============== */
 
-header{
+header,main{
     background-color: #fff;
+    margin-bottom: 6rem;
 }
 
 nav{
@@ -94,4 +95,118 @@ ul li a{
     display: flex;
     gap:10px;
     justify-content: space-around;
+}
+
+
+/* ===========main start============= */
+
+main h3{
+    color: #3A3A3A;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.img-detail{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 1.4rem;
+}
+
+.card-1{
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 3px 3px 7px rgb(218, 209, 209),-3px -3px 7px #fff0f0;
+    border-radius: 5px;
+}
+
+.card-container {
+    text-align: left;
+    padding: 5px 0 5px 15px;
+}
+.card-container h5{
+    color: #18191F;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: left;
+}
+.card-container h6{
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.card-title{
+    color: #787885;
+    font-weight: 500;
+}
+
+/* responsive design */
+
+/* small device */
+
+@media screen and (max-width:576px) {
+    
+    nav
+    {
+        flex-direction: column;
+    }
+    .nav-title{
+        margin-bottom: 1rem;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner-container{
+        width: 100%;
+        margin-top:1rem;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+    }
+
+    .banner-logos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:1.4rem;
+    }
+}
+
+/* ======medium device=========== */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+    nav
+    {
+        flex-direction: column;
+    }
+    .nav-title{
+        margin-bottom: 1rem;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+
+    .banner-container{
+        width: 100%;
+        margin-top:1rem;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+    }
+
+    .banner-logos{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap:1.4rem;
+    }
 }
