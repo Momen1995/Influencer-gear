@@ -111,7 +111,7 @@ main h3{
 .img-detail{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 1.4rem;
 }
 
@@ -144,14 +144,33 @@ main h3{
     font-weight: 500;
 }
 
+/* ============feature section============= */
+.feature{
+    display: flex;
+    gap: 6rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:7rem;
+}
+
+.feature-container h2{
+    color: #0A0826;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.feature-container p{
+    color: #6C6C6C;
+    font-weight: 500;
+}
 /* responsive design */
 
 /* small device */
 
 @media screen and (max-width:576px) {
     
-    nav
-    {
+    nav{
         flex-direction: column;
     }
     .nav-title{
@@ -175,6 +194,14 @@ main h3{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
         gap:1.4rem;
+    }
+
+    .img-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-img img{
+        width:100%;
     }
 }
 
@@ -208,5 +235,12 @@ main h3{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(2,1fr);
         gap:1.4rem;
+    }
+    .img-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-img img{
+        width:100%;
     }
 }
